@@ -551,18 +551,20 @@ svg {
   transition: opacity var(--transitio-duration) var(--trasition-timing-function),
     transform var(--transitio-duration) var(--trasition-timing-function);
 }
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   transform: scale(0);
   pointer-events: none;
-}
+} */
 .window {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  transform: translate(-50%, -50%);
+  padding: 40px 39px 41px;
+
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -583,6 +585,57 @@ svg {
 }
 .close__icon {
   display: block;
+}
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+.form__item label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.form__item input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+.comment label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.comment textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.agreement {
+  display: block;
+  margin-bottom: 30px;
+}
+.contract-link {
+  color: var(--current-item-color);
+}
+.form button {
+  margin: 0 auto;
+  justify-content: center;
 }
 /* <<<<< Page Portfolio >>>>> */
 

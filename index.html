@@ -403,10 +403,34 @@
         <button class="close" data-modal-close>
             <img class="close__icon" src="./images/close.svg" alt="Крестик" width="30px">
         </button>
+        <form action="" class="form">
+            <ul class="form__list list">
+                <li class="form__item">
+                    <label for="client-name">Имя</label>
+                    <input type="text" name="client-name" id="client-name">
+                </li>
+                <li class="form__item">
+                    <label for="phone-number">Телефон</label>
+                    <input type="tel" name="" id="phone-number">
+                </li>
+                <li class="form__item">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail">
+                </li>
+            </ul>
+            <div class="comment">
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" rows="5" placeholder="Введите текст"></textarea>
+            </div>
+            <label class="agreement">
+                <input type="checkbox" name="agreement" value=""/>
+                Соглашаюсь с рассылкой и принимаю <a class="contract-link" href="">Условия договора</a> 
+            </label>
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
     </div>
 </div>
-<script src="./js/modal.js"></script>
-
+<!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>
