@@ -402,47 +402,41 @@
     <div class="window">
         <button class="close" data-modal-close></button>
         <form action="" class="form">
-            
-                <div class="form__field">
-                    <label for="client-name">Имя</label>
-                    <div class="input__container">
-                    <input
-                    class="form__input" 
-                    type="text"
-                    name="client-name" 
-                    id="client-name">
-                    <svg class="form__icon">
-                        <use href="./images/sprite.svg#person"></use>
-                    </svg>
-                    </div>
+            <label class="form__field" for="client-name">Имя
+                <div class="input__container">
+                <input
+                class="form__input" 
+                type="text"
+                name="client-name">
+                <svg class="form__icon">
+                    <use href="./images/sprite.svg#person"></use>
+                </svg>
                 </div>
-                <div class="form__field">
-                    <label for="phone-number">Телефон</label>
-                    <div class="input__container">
-                    <input
-                    class="form__input" 
-                    type="tel" 
-                    name="phone-number" 
-                    id="phone-number">
-                    <svg class="form__icon">
-                        <use href="./images/sprite.svg#phone"></use>
-                    </svg>
-                    </div>
+            </label>
+            <label class="form__field" for="phone-number">
+                Телефон
+                <div class="input__container">
+                <input
+                class="form__input" 
+                type="tel" 
+                name="phone-number">
+                <svg class="form__icon">
+                    <use href="./images/sprite.svg#phone"></use>
+                </svg>
                 </div>
-                <div class="form__field">
-                    <label for="mail">Почта</label>
-                    <div class="input__container">
-                    <input
-                    class="form__input" 
-                    type="email" 
-                    name="mail" 
-                    id="mail">
-                    <svg class="form__icon">
-                        <use href="./images/sprite.svg#email"></use>
-                    </svg>
-                    </div>
+            </label>
+            <label class="form__field" for="mail">
+                Почта
+                <div class="input__container">
+                <input
+                class="form__input" 
+                type="email" 
+                name="mail">
+                <svg class="form__icon">
+                    <use href="./images/sprite.svg#email"></use>
+                </svg>
                 </div>
-           
+            </label> 
             <div class="comment">
                 <label for="comment">Комментарий</label>
                 <textarea name="comment" rows="5" placeholder="Введите текст"></textarea>
@@ -453,7 +447,6 @@
                 <span class="icon__container"></span>
                 Соглашаюсь с рассылкой и принимаю <a class="contract-link" href="">Условия договора</a>
             </label>
-            
             <button type="submit" class="submit-btn">Отправить</button>
         </form>
     </div>
