@@ -400,37 +400,65 @@
 <!-- Modal Window -->
 <div class="backdrop is-hidden" data-modal>
     <div class="window">
-        <button class="close" data-modal-close>
-            <img class="close__icon" src="./images/close.svg" alt="Крестик" width="30px">
-        </button>
+        <button class="close" data-modal-close></button>
         <form action="" class="form">
-            <ul class="form__list list">
-                <li class="form__item">
+            
+                <div class="form__field">
                     <label for="client-name">Имя</label>
-                    <input type="text" name="client-name" id="client-name">
-                </li>
-                <li class="form__item">
+                    <div class="input__container">
+                    <input
+                    class="form__input" 
+                    type="text"
+                    name="client-name" 
+                    id="client-name">
+                    <svg class="form__icon">
+                        <use href="./images/sprite.svg#person"></use>
+                    </svg>
+                    </div>
+                </div>
+                <div class="form__field">
                     <label for="phone-number">Телефон</label>
-                    <input type="tel" name="" id="phone-number">
-                </li>
-                <li class="form__item">
+                    <div class="input__container">
+                    <input
+                    class="form__input" 
+                    type="tel" 
+                    name="phone-number" 
+                    id="phone-number">
+                    <svg class="form__icon">
+                        <use href="./images/sprite.svg#phone"></use>
+                    </svg>
+                    </div>
+                </div>
+                <div class="form__field">
                     <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail">
-                </li>
-            </ul>
+                    <div class="input__container">
+                    <input
+                    class="form__input" 
+                    type="email" 
+                    name="mail" 
+                    id="mail">
+                    <svg class="form__icon">
+                        <use href="./images/sprite.svg#email"></use>
+                    </svg>
+                    </div>
+                </div>
+           
             <div class="comment">
                 <label for="comment">Комментарий</label>
                 <textarea name="comment" rows="5" placeholder="Введите текст"></textarea>
             </div>
-            <label class="agreement">
-                <input type="checkbox" name="agreement" value=""/>
-                Соглашаюсь с рассылкой и принимаю <a class="contract-link" href="">Условия договора</a> 
+            
+            <label class="checkbox__label">
+                <input class="checkbox" type="checkbox" name="agreement" value="agree"/>
+                <span class="icon__container"></span>
+                Соглашаюсь с рассылкой и принимаю <a class="contract-link" href="">Условия договора</a>
             </label>
+            
             <button type="submit" class="submit-btn">Отправить</button>
         </form>
     </div>
 </div>
-<!-- <script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
