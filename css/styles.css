@@ -283,7 +283,7 @@ svg {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.mail-sibmit-container {
+.mail-submit-container {
   display: flex;
 }
 .subsription_form input {
