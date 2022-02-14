@@ -664,8 +664,12 @@ textarea:focus {
   justify-content: center;
   margin-bottom: 30px;
 }
+.lable__container {
+  word-spacing: normal;
+}
 .contract-link {
   color: var(--current-item-color);
+  text-decoration: underline;
 }
 .form button {
   margin: 0 auto;
