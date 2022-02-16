@@ -655,17 +655,19 @@ textarea:focus-visible {
   border-radius: 4px;
   transition: border-color var(--transitio-duration) var(--trasition-timing-function);
 }
+::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
 textarea:focus {
   border-color: var(--current-item-color);
 }
-.checkbox__label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.checkbox__container {
+  display: block;
+  text-align: center;
   margin-bottom: 30px;
 }
-.lable__container {
-  word-spacing: normal;
+.checkbox__label {
+  display: inline-block;
 }
 .contract-link {
   color: var(--current-item-color);
@@ -681,12 +683,13 @@ input[type='checkbox'] {
 }
 .icon__container {
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 7px;
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
   overflow: hidden;
+
   transition: background-color var(--transitio-duration) var(--trasition-timing-function),
     background-image var(--transitio-duration) var(--trasition-timing-function),
     border-color var(--transitio-duration) var(--trasition-timing-function);

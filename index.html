@@ -445,12 +445,13 @@
                 <label for="comment">Комментарий</label>
                 <textarea name="comment" rows="5" id="comment" placeholder="Введите текст"></textarea>
             </div>
-            
-            <label class="checkbox__label">
-                <input class="checkbox" type="checkbox" name="agreement" value="agree"/>
-                <span class="icon__container"></span>
-                <span class="lable__container">Соглашаюсь с рассылкой и принимаю <a class="contract-link" href="">Условия договора</a></span>   
-            </label>
+            <div class="checkbox__container">
+                <label class="checkbox__label">
+                    <input class="checkbox" type="checkbox" name="agreement" value="agree"/>
+                    <span class="icon__container"></span><span>Соглашаюсь с рассылкой и принимаю </span>
+                </label>
+                <a class="contract-link" href=""> Условия договора</a>
+            </div>
             <button type="submit" class="submit-btn">Отправить</button>
         </form>
     </div>
